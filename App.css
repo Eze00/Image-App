@@ -1,0 +1,208 @@
+/* Paste these in html */
+
+/* <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"
+/>
+<link
+  href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap"
+  rel="stylesheet"
+/> */
+
+/* Global Styles */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  width: 100%;
+  max-width: 1130px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+/* Hero Styles */
+
+.hero {
+  width: 100%;
+  min-height: 100vh;
+  padding: 40px 0;
+  background: #364f6b;
+}
+
+.hero .container h1 {
+  font-size: 40px;
+  line-height: 1;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.hero .container .btnContainer {
+  width: 100%;
+  padding: 10px 0 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero .container .btnContainer button {
+  width: 120px;
+  text-align: center;
+  border: none;
+  outline: none;
+  background: #fc5185;
+  color: #fff;
+  border-radius: 4px;
+  padding: 10px 30px;
+  margin: 0 10px;
+  cursor: pointer;
+  transition: background 400ms ease-in-out;
+}
+
+.hero .container .btnContainer button:hover {
+  background: #ce426d;
+}
+
+/* Search Styles */
+
+form {
+  padding-bottom: 28px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form input {
+  width: 100%;
+  max-width: 300px;
+  padding: 10px;
+  outline: none;
+  background: transparent;
+  border: 1px solid #fc5185;
+  color: #fff;
+}
+
+form input::placeholder {
+  color: #fff;
+}
+
+form button {
+  border: none;
+  outline: none;
+  font-size: 17px;
+  font-weight: 500;
+  padding: 8px 18px;
+  background: #fc5185;
+  color: #fff;
+  margin-left: -89px;
+  cursor: pointer;
+  transition: background 400ms ease-in-out;
+}
+
+form button:hover {
+  background: #c15979;
+}
+
+/* Card Styles */
+
+.card {
+  width: 100%;
+  max-width: 360px;
+  background: #f5f5f5;
+  margin: 12px 0;
+  box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+}
+
+.card a {
+  text-decoration: none;
+}
+
+.card .cardImage {
+  width: 100%;
+  height: 240px;
+  display: block;
+}
+
+.card .cardInfo {
+  padding: 14px 20px 20px 20px;
+}
+
+.card .cardInfo p {
+  font-size: 17px;
+  font-weight: 500;
+  color: #364f6b;
+  margin: 8px 10px;
+}
+
+.card .cardInfo p i,
+.card .cardInfo p i span {
+  color: #fc5185;
+}
+
+.card .cardInfo p span {
+  margin: 0 4px 0 12px;
+}
+
+.card .cardInfo .user {
+  color: #fc5185;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.card .cardInfo .tags {
+  display: flex;
+  align-items: center;
+}
+
+.card .cardInfo .tags span {
+  margin: 8px 10px 0 0;
+  background: #fc5185;
+  color: #f5f5f5;
+  border-radius: 50px;
+  padding: 6px;
+  font-size: 14px;
+  width: 100px;
+  text-align: center;
+}
+
+/* Media Queries */
+
+@media (max-width: 839px) {
+  .container {
+    width: 90%;
+    max-width: 430px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  form {
+    width: 90%;
+    max-width: 430px;
+    margin: 0 auto;
+  }
+  form button {
+    margin-left: -88px;
+  }
+  .card {
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 840px) and (max-width: 1180px) {
+  .container {
+    width: 90%;
+    max-width: 815px;
+  }
+  .card {
+    max-width: 48%;
+  }
+}
